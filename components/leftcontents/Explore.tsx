@@ -29,7 +29,7 @@ const Explore = () => {
   return (
     <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {topCelebs.map((celeb) => (
-        <div className="">
+        <div className="bg-[#1c252a] text-white flex flex-col items-center pb-2">
           <Image
             src={celeb.image}
             alt="celebrity headshot"
