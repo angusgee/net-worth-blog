@@ -1,6 +1,7 @@
 import React from "react";
 import { groq } from "next-sanity";
 import { client } from "@/sanity/lib/client";
+import { Post } from "@/typings";
 
 const query = groq`
 *[_type == "post"] {
@@ -14,7 +15,7 @@ const page = async () => {
   console.log("Posts", posts);
   return (
     <div>
-      {posts.map((post) => (
+      {posts.map((post: Post) => (
         <p>{post.title}</p>
       ))}
     </div>
