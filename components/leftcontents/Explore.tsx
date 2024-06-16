@@ -30,8 +30,16 @@ const Explore = () => {
     <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {topCelebs.map((celeb) => (
         <div className="">
-          <Image src={celeb.image} alt="celebrity headshot" />
-          <Image src={MapImg} alt="map of the world" />
+          <Image
+            src={celeb.image}
+            alt="celebrity headshot"
+            className="w-28 md:w-40 h-20 md:h-40 object-cover object-top"
+          />
+          <Image
+            src={MapImg}
+            alt="map of the world"
+            className="w-28 md:w-40 h-20 md:h-28 brightness-80 grayscale object-cover object-center"
+          />
           <p className="">{celeb.name}</p>
           <p className="">{celeb.netWorth}</p>
         </div>
