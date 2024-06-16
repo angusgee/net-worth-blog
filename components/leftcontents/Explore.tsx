@@ -29,7 +29,10 @@ const Explore = () => {
   return (
     <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {topCelebs.map((celeb) => (
-        <div className="bg-[#1c252a] text-white flex flex-col items-center pb-2">
+        <div
+          key={celeb.name}
+          className="bg-[#1c252a] text-white flex flex-col items-center pb-2"
+        >
           <Image
             src={celeb.image}
             alt="celebrity headshot"
@@ -40,8 +43,11 @@ const Explore = () => {
             alt="map of the world"
             className="w-28 md:w-40 h-20 md:h-28 brightness-80 grayscale object-cover object-center"
           />
-          <p className="">{celeb.name}</p>
-          <p className="">{celeb.netWorth}</p>
+          <p className="text-[12px] font-semibold">{celeb.name}</p>
+          <p className="text-[12px] text-[#e581e5]">{celeb.netWorth}</p>
+          <button className="w-34 md:w-32 text-[10px] bg-transparent text-white uppercase mt-2 px-4 py-2 border border-[#fff]">
+            Read Now
+          </button>
         </div>
       ))}
     </div>

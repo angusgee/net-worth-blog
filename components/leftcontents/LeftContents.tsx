@@ -3,7 +3,7 @@ import Explore from "./Explore";
 
 const LeftContents = () => {
   return (
-    <div className="">
+    <div className="py-10">
       <Explore />
     </div>
   );
