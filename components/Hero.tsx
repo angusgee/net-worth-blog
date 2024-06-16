@@ -21,8 +21,10 @@ const Hero = () => {
           <h2 className="text-white  text-[16px] md:text-[24px] font-semibold">
             Get the hottest celebrity news
           </h2>
-          <div>
-            <button className="text-white uppercase">Read Now</button>
+          <div className="flex pt-6 md:pt-8">
+            <button className="text-white uppercase bg-gradient-to-r from-transparent to-[#8457c8] w-34 md:w-38 text-[12px] md:text-base hover:bg-[#e581e5] font-semibold py-2 px-4 border border-white hover:border-transparent">
+              Read Now
+            </button>
           </div>
         </div>
       </div>
