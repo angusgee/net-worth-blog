@@ -27,9 +27,9 @@ const Explore = () => {
     },
   ];
   return (
-    <div>
+    <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {topCelebs.map((celeb) => (
-        <div>
+        <div className="">
           <Image src={celeb.image} alt="celebrity headshot" />
           <Image src={MapImg} alt="map of the world" />
           <p className="">{celeb.name}</p>
