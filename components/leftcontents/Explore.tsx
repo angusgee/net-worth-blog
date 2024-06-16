@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import SnoopDogg from "../../public/assets/Snoop-Dogg.jpg";
 import ChrisWilliamson from "../../public/assets/Chris-Williamson.jpg";
 import VenusWilliams from "../../public/assets/Venus-Williams.jpg";
@@ -28,7 +29,12 @@ const Explore = () => {
   return (
     <div>
       {topCelebs.map((celeb) => (
-        <div>{celeb.name}</div>
+        <div>
+          <Image src={celeb.image} alt="celebrity headshot" />
+          <Image src={MapImg} alt="map of the world" />
+          <p className="">{celeb.name}</p>
+          <p className="">{celeb.netWorth}</p>
+        </div>
       ))}
     </div>
   );
