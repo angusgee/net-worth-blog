@@ -3,7 +3,6 @@ import SnoopDogg from "../../public/assets/Snoop-Dogg.jpg";
 import ChrisWilliamson from "../../public/assets/Chris-Williamson.jpg";
 import VenusWilliams from "../../public/assets/Venus-Williams.jpg";
 import MapImg from "../../public/assets/world-map.jpg";
-import { clearTraceEvents } from "next/dist/trace/trace";
 
 const Explore = () => {
   const topCelebs = [
