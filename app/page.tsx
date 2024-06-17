@@ -15,12 +15,12 @@ const query = groq`
 `;
 
 const page = async () => {
-  const posts = await client.fetch(query);
+  const posts: Post[] = await client.fetch(query);
   return (
     <div>
       <Header />
       <Hero />
-      <Main />
+      <Main posts={posts} />
       <Footer />
     </div>
   );
